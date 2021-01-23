@@ -13,4 +13,5 @@ Numer albumu: 63879
 Grupa studencka: WEL18DE1N1
 
 # Pytania do zadań z instrukcji
-
+W jaki sposób można rozbudować funkcjonalność programu w  przypadku  gdy  liczba  naciśnięć  przycisku  przekroczy  określoną  ilość?
+Należy zapętlić program aby po przekroczeniu danej liczby naciśnięć rozpoczął prace od nowa.
