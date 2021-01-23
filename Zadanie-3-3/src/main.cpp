@@ -1,9 +1,23 @@
 #include <Arduino.h>
 
-void setup() {
-  // put your setup code here, to run once:
-}
+#define ADC_RESOLITTION_DEFAULT (5.0f / 1024.0f)
 
-void loop() {
-  // put your main code here, to run repeatedly:
+uint16_t digital;
+float voltage;
+
+void setup() {
+   Serial.begin(9600);
+  analogReference (DEFAULT);
+  pinMode(A0, INPUT);
 }
+void loop () {
+  digital = analogRead (A0);
+  voltage = ADC_RESOLITTION_DEFAULT + digital;
+  Serial.print("A0 =");
+  Serial.print(digital);
+  Serial.print("\t V(0) =" );
+  Serial.print(voltage);
+  Serial.println("[V]");
+  delay(1000);
+
+} 

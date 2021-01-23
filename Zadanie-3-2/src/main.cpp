@@ -1,6 +1,5 @@
-#include <Arduino.h>
+include <Arduino.h>
 #include <stdio.h>
-
 #define FOSC 16000000
 #define BAUD 9600
 #define MY_UBRR (FOSC / 16 / BAUD - 1)
